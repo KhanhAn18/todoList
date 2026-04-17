@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản Lý Công Việc</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <h1>📌 To-do List</h1>
+        <p class="subtitle">Quản lý công việc hằng ngày của bạn</p>
+
+        <div class="input-box">
+            <input type="text" id="taskInput" placeholder="Nhập công việc..." />
+            <button onclick="addTask()">Thêm</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- chức năng nghiệp vụ thêm xóa -->
+    <script>
+        //     function addTask() {
+        //         let input = document.getElementById("taskInput");
+        //         let taskText = input.value.trim();
+
+        //         if (taskText === "") {
+        //             alert("Vui lòng nhập công việc!");
+        //             return;
+        //         }
+
+        //         let taskList = document.getElementById("taskList");
+
+        //         let li = document.createElement("li");
+        //         li.innerHTML = `
+        //     <span>${taskText}</span>
+        //     <button class="delete-btn" onclick="deleteTask(this)">Xóa</button>
+        //   `;
+
+        //         taskList.appendChild(li);
+        //         input.value = "";
+        //     }
+
+        //     function deleteTask(btn) {
+        //         btn.parentElement.remove();
+        //     }
+    </script>
 </body>
+
 </html>
