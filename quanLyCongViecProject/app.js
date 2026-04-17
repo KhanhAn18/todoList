@@ -18,5 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
         tasks.push(nameTask);
 
         localStorage.setItem('tasks', JSON.stringify(tasks));
+        console.log('Sâm yêu tâm');
     });
 });
