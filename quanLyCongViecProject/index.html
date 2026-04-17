@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +9,18 @@
 </head>
 
 <body>
-    <form id="form_task">
-        <input type="text" value="" class="name_task" placeholder="Nhập tên công việc">
-        <button type="submit" class="btn_add_task">Thêm công việc</button>
-    </form>
+    <div class="container">
+        <h1>To-do List</h1>
+        <p class="subtitle">Quản lý công việc của bạn</p>
+
+        <form id="form_task" class="input-box">
+            <input type="text" class="name_task" placeholder="Nhập tên công việc">
+            <button type="submit">Thêm</button>
+        </form>
+
+        <ul class="task_list"></ul>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
